@@ -1,5 +1,5 @@
 import {nanoid} from "nanoid";
-export const menu = [
+export const MENU = [
   {
     id: nanoid(5),
     title: "Главная",
@@ -31,3 +31,5 @@ export const menu = [
     url: "/dashboard",
   },
 ];
+
+export const SOCIAL_ICONS_SIZE = 20;
