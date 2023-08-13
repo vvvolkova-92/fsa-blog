@@ -8,7 +8,7 @@ const Navbar = (props) => {
     console.log("click")
   }
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.wrapper}>
       <Link href="/" className={styles.logo}>logo</Link>
       <nav className={styles.navbar}>
         <ul className={styles.menuItems}>
@@ -18,7 +18,7 @@ const Navbar = (props) => {
         </ul>
         <button className={styles.btn} onClick={onClickButton}>Вход</button>
       </nav>
-    </div>
+    </header>
   );
 }
 
