@@ -33,3 +33,11 @@ export const MENU = [
 ];
 
 export const SOCIAL_ICONS_SIZE = 20;
+
+// about
+export const about = {
+  image: "/aboutImg.jpeg",
+  title: "Lorem ipsum dolor sit amet",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem corporis esse ex quia, quod!",
+
+}
