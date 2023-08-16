@@ -69,5 +69,5 @@ export const portfolio = {
     {id: nanoid(5), name: "Приложения", url: "/portfolio/applications", image: ""}
   ],
   };
-
+export const modes = { DARK: "dark", LIGHT: "light"};
 export const img = "https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg";

@@ -4,6 +4,7 @@ import Link from "next/link";
 import {MENU} from "@/ulits/config";
 import styles from './navbar.module.css';
 import Image from "next/image";
+import Toggle from "@/components/ui/Toggle/Toggle";
 const Navbar = (props) => {
   const onClickButton = () => {
     console.log("click")
@@ -16,6 +17,7 @@ const Navbar = (props) => {
       </Link>
       <nav className={styles.navbar}>
         <ul className={styles.menuItems}>
+          <Toggle />
           {MENU.map(item => <li key={item.id} className={styles.menuItem}>
             <Link href={item.url} >{item.title}</Link>
           </li>)}
