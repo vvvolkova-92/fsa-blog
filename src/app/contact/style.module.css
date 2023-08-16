@@ -13,7 +13,7 @@
 }
 
 .imageWrapper {
-  height: 500px;
+  height: 400px;
   position: relative;
   flex: 1;
 }
@@ -21,6 +21,7 @@
 .image {
   object-fit: contain;
   object-position: center center;
+  animation: var(--image-animation);
 }
 
 .form {
