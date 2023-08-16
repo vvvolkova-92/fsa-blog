@@ -60,3 +60,12 @@ export const contact = {
   image: "/contactImg.png",
   title: "Lorem ipsum dolor sit amet",
 }
+
+export const portfolio = {
+  title: "Наши работы",
+  gallery: [
+    {id: nanoid(5), name: "Иллюстрации", image: "/portfolio/illustrations", url: ""},
+    {id: nanoid(5), name: "Вебсайты", image: "/portfolio/websites", url: ""},
+    {id: nanoid(5), name: "Приложения", image: "/portfolio/applications", url: ""}
+  ],
+  }

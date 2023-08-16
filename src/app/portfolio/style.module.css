@@ -1,3 +1,62 @@
 .wrapper {
 
 }
+
+.title {
+  font-size: 100px;
+}
+
+.subtitle {
+  margin: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  color: white;
+  border: 5px solid var(--gray-color);
+  border-radius: 5px;
+  background-size: contain !important;
+}
+
+.item:nth-child(1) {
+  background: url("/illustr.png");
+  filter: grayscale(100%);
+}
+
+.item:nth-child(2) {
+  background: url("/web.png");
+  filter: grayscale(100%);
+}
+
+.item:nth-child(3) {
+  background: url("/app.png");
+  filter: grayscale(100%);
+}
+
+.item:hover {
+  cursor: pointer;
+  filter: none;
+  border-color: white;
+}
+
+.itemTitle {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item:hover .itemTitle{
+  color: var(--accent-color);
+}
+
+
