@@ -7,15 +7,17 @@
 :root {
   --accent-color: #E68745;
   --dark-gray: rgba(88,88,88,1);
+  --gray-color: #bbb;
   --light-gray: rgba(245,245,245,1);
+  --background-color: #111;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #111;
-  color: #bbb;
+  background-color: var(--background-color);
+  color: var(--gray-color);
 }
 
 a {

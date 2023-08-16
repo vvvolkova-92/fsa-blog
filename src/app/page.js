@@ -1,6 +1,5 @@
 import styles from './page.module.css';
 import Image from "next/image";
-import {IMAGE_IN_HEADER_SIZE} from "@/ulits/config";
 export default function Home() {
   return (
       <section className={styles.wrapper}>

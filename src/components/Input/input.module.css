@@ -1,0 +1,21 @@
+.input {
+  all: unset;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: transparent;
+  color: var(--gray-color);
+  border: 3px solid var(--gray-color);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.input::placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--gray-color);
+}
+
+.input:focus {
+  border-color: white;
+}

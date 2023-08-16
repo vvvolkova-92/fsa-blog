@@ -54,4 +54,9 @@ export const about = {
     title: "Связаться с нами",
     url: "/contact"
   }
+};
+
+export const contact = {
+  image: "/contactImg.png",
+  title: "Lorem ipsum dolor sit amet",
 }

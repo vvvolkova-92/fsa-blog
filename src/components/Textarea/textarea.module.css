@@ -1,0 +1,21 @@
+.textarea {
+  all: unset;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: transparent;
+  color: var(--gray-color);
+  border: 3px solid var(--gray-color);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.textarea::placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--gray-color);
+}
+
+.textarea:focus {
+  border-color: white;
+}
