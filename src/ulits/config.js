@@ -39,5 +39,19 @@ export const about = {
   image: "/aboutImg.jpeg",
   title: "Lorem ipsum dolor sit amet",
   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem corporis esse ex quia, quod!",
+  textWrapper1: {
+    title: "Lorem ipsum dolor",
+    description1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt fugit inventore quasi sapiente temporibus, tenetur. A, accusamus architecto eos error fuga libero, maxime non odio quas sequi suscipit temporibus.",
+    description2: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt fugit inventore quasi sapiente temporibus, tenetur. A, accusamus architecto eos error fuga libero, maxime non odio quas sequi suscipit temporibus.",
 
+  },
+  textWrapper2: {
+    title: "Lorem ipsum dolor",
+    description1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt fugit inventore quasi sapiente temporibus, tenetur. A, accusamus architecto eos error fuga libero, maxime non odio quas sequi suscipit temporibus.",
+    description2: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+  },
+  button: {
+    title: "Связаться с нами",
+    url: "/contact"
+  }
 }

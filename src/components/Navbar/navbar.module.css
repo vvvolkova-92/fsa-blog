@@ -6,7 +6,13 @@
 }
 
 .logo {
-
+  font-size: 32px;
+  font-weight: 300;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  width: 200px;
+  color: var(--accent-color);
 }
 
 .navbar {
