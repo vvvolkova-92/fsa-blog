@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex-grow: 3;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  color: var(--gray-color);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  height: 300px;
+}
+
+.image {
+  object-fit: cover;
+}
