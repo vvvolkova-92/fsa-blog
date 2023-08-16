@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button/Button";
 import Image from "next/image";
 const PortfolioItem = ({title, description, image, url}) => {
   return (
-    <div className={styles.wrapper}>
+    <article className={styles.wrapper}>
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
@@ -14,7 +14,7 @@ const PortfolioItem = ({title, description, image, url}) => {
       <div className={styles.imageWrapper}>
         <Image className={styles.image} src={image} alt={`Изображение к посту ${title}`} fill/>
       </div>
-    </div>
+    </article>
   );
 }
 
