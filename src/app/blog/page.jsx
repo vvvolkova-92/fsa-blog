@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './style.module.css';
-const Portfolio = (props) => {
+const Blog = () => {
   return (
-    <div className={styles.wrapper}>Portfolio</div>
+    <section className={styles.wrapper}>
+
+    </section>
   );
 }
 
-export default Portfolio;
+export default Blog;

@@ -3,9 +3,9 @@ import React from 'react';
 import styles from './style.module.css';
 import Image from "next/image";
 import {contact} from "@/ulits/config";
-import Input from "@/components/Input/Input";
-import TextArea from "@/components/Textarea/TextArea";
-import Button from "@/components/Button/Button";
+import Input from "@/components/ui/Input/Input";
+import TextArea from "@/components/ui/Textarea/TextArea";
+import Button from "@/components/ui/Button/Button";
 const Contact = (props) => {
   const onChangeInput = () => {
 

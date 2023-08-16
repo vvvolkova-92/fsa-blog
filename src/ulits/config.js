@@ -64,8 +64,8 @@ export const contact = {
 export const portfolio = {
   title: "Наши работы",
   gallery: [
-    {id: nanoid(5), name: "Иллюстрации", image: "/portfolio/illustrations", url: ""},
-    {id: nanoid(5), name: "Вебсайты", image: "/portfolio/websites", url: ""},
-    {id: nanoid(5), name: "Приложения", image: "/portfolio/applications", url: ""}
+    {id: nanoid(5), name: "Иллюстрации", url: "/portfolio/illustrations", image: ""},
+    {id: nanoid(5), name: "Вебсайты", url: "/portfolio/websites", image: ""},
+    {id: nanoid(5), name: "Приложения", url: "/portfolio/applications", image: ""}
   ],
-  }
+  };

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style.module.css';
 import Image from "next/image";
 import {about} from "@/ulits/config";
-import Button from "@/components/Button/Button";
+import Button from "@/components/ui/Button/Button";
 const About = (props) => {
   return (
     <div className={styles.wrapper}>
