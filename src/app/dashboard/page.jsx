@@ -1,6 +1,20 @@
-import React from 'react';
+"use client"
+import React, {useEffect, useState} from 'react';
 import styles from './style.module.css';
+import useSWR from "swr";
+import {BLOG_URL} from "@/ulits/config";
+
+
 const Dashboard = (props) => {
+  const [state, setState] = useState({
+    data: [],
+    isLoading: false,
+    error: false,
+  });
+
+  const fetcher = (...args) => fetch(...args).then(res => res.json());
+  const { data, error, isLoading } = useSWR(BLOG_URL, fetcher);
+  console.log(state);
   return (
     <div className={styles.wrapper}>Dashboard</div>
   );

@@ -2,7 +2,7 @@
 import React, {useContext} from 'react';
 import styles from './toggle.module.css';
 import {modes} from "@/ulits/config";
-import {ThemeContext} from "../../../../context/ThemeContex";
+import {ThemeContext} from "@/context/ThemeContex";
 const Toggle = ({}) => {
 
   const { theme, changeTheme } = useContext(ThemeContext);
