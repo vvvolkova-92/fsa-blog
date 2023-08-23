@@ -12,6 +12,16 @@ async function getPost(id) {
   return res.json();
 }
 
+export const generateMetadata = async ({params}) => {
+  const {id} = params;
+  const post = await getPost(id);
+  const {title, description} = post;
+  return {
+    title,
+    description,
+  }
+}
+
 const Post = async({params}) => {
   const post = await getPost(params.id);
   const {title, content, image} = post;

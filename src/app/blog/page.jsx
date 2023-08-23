@@ -16,8 +16,8 @@ const Blog = async () => {
   return (
     <section className={styles.wrapper}>
       {posts.map(post => <PostItem
-        key={post.id}
-        url={post.url}
+        key={post._id}
+        url={`/blog/${post._id}`}
         title={post.title}
         description={post.content}
         image={post.image}/>)}

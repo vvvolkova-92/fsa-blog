@@ -6,6 +6,12 @@ import {contact} from "@/ulits/config";
 import Input from "@/components/ui/Input/Input";
 import TextArea from "@/components/ui/Textarea/TextArea";
 import Button from "@/components/ui/Button/Button";
+
+export const metadata = {
+  title: 'Контактная информация',
+  description: 'Просто свяжитесь со мной =)',
+}
+
 const Contact = (props) => {
   const onChangeInput = () => {
 
