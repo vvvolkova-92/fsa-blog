@@ -70,4 +70,5 @@ export const portfolio = {
   ],
   };
 export const modes = { DARK: "dark", LIGHT: "light"};
-export const img = "https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg";
+export const img = "https://dummyimage.com/200x200/ba0fba/fff.jpg&text=+VVV";
+export const BLOG_URL = "https://jsonplaceholder.org/posts";

@@ -3,9 +3,9 @@ import React from 'react';
 import styles from './postItem.module.css';
 import Image from "next/image";
 import Link from "next/link";
-const PostItem = ({title, description, image, url = "#"}) => {
+const PostItem = ({title, description, image, url = "#", key}) => {
   return (
-    <article>
+    <article key={key}>
       <Link className={styles.wrapper} href={url}>
         <div className={styles.imageWrapper}>
           <Image className={styles.image} src={image} alt={`Изображение к посту ${title}`} fill/>

@@ -1,29 +1,26 @@
 import React from 'react';
 import styles from './style.module.css';
 import PostItem from "@/components/PostItem/PostItem";
-const Blog = () => {
+import {BLOG_URL} from "@/ulits/config";
+
+async function getPosts() {
+  const res = await fetch(BLOG_URL, { cache: 'no-store' })
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+  return res.json()
+}
+
+const Blog = async () => {
+  const posts = await getPosts() || [];
   return (
     <section className={styles.wrapper}>
-      <PostItem
-        url="/blog/testId"
-        title="Lorem ipsum dolor sit amet, consectetur."
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur cupiditate, doloremque earum eum ex exercitationem in iste maxime molestiae nihil perspiciatis quasi quia quod, rem saepe soluta unde vel?"
-        image="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-      />
-      <PostItem
-        url="#"
-        title="Lorem ipsum dolor sit amet, consectetur."
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur cupiditate, doloremque earum eum ex exercitationem in iste maxime molestiae nihil perspiciatis quasi quia quod, rem saepe soluta unde vel?"
-        image="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-      />
-      <PostItem
-        url="#"
-        title="Lorem ipsum dolor sit amet, consectetur."
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur cupiditate, doloremque earum eum ex exercitationem in iste maxime molestiae nihil perspiciatis quasi quia quod, rem saepe soluta unde vel?"
-        image="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-      />
-
-
+      {posts.map(post => <PostItem
+        key={post.id}
+        url={post.url}
+        title={post.title}
+        description={post.content}
+        image={post.image}/>)}
     </section>
   );
 }

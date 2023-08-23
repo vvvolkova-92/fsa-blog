@@ -24,7 +24,12 @@
   max-height: 200px;
   font-size: 18px;
   font-weight: 300;
-/*дописать ... или обрезку*/
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.3em;
+  height: 3.9em;
 }
 
 .imageWrapper {
