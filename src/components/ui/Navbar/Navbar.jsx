@@ -5,10 +5,10 @@ import {MENU} from "@/ulits/config";
 import styles from './navbar.module.css';
 import Image from "next/image";
 import Toggle from "@/components/ui/Toggle/Toggle";
+import {signOut, useSession} from "next-auth/react";
 const Navbar = (props) => {
-  const onClickButton = () => {
-    console.log("click")
-  }
+  const {status} = useSession();
+  const isAuth = status === 'authenticated';
   return (
     <header className={styles.wrapper}>
       <Link href="/" className={styles.logo}>
@@ -22,7 +22,8 @@ const Navbar = (props) => {
             <Link href={item.url} >{item.title}</Link>
           </li>)}
         </ul>
-        <button className={styles.btn} onClick={onClickButton}>Вход</button>
+        {isAuth && <button className={styles.btn} onClick={signOut}>Выход</button>
+        }
       </nav>
     </header>
   );
