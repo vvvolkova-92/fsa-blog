@@ -72,3 +72,4 @@ export const portfolio = {
 export const modes = { DARK: "dark", LIGHT: "light"};
 export const img = "https://dummyimage.com/200x200/ba0fba/fff.jpg&text=+VVV";
 export const BLOG_URL = "http://localhost:3000/api/posts";
+export const REGISTER_URL = "/api/auth/registration";
