@@ -6,6 +6,7 @@ import styles from './navbar.module.css';
 import Image from "next/image";
 import Toggle from "@/components/ui/Toggle/Toggle";
 import {signOut, useSession} from "next-auth/react";
+import Button from "@/components/ui/Button/Button";
 const Navbar = (props) => {
   const {status} = useSession();
   const isAuth = status === 'authenticated';
@@ -22,7 +23,7 @@ const Navbar = (props) => {
             <Link href={item.url} >{item.title}</Link>
           </li>)}
         </ul>
-        {isAuth && <button className={styles.btn} onClick={signOut}>Выход</button>
+        {isAuth && <Button onClick={signOut} title="Выход" size="small"/>
         }
       </nav>
     </header>

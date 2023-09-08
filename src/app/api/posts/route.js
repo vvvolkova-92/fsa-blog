@@ -23,8 +23,6 @@ export const GET = async (request) => {
 export const POST = async (request) => {
   const body = await request.json();
   const post = new Post(body);
-  console.dir(body);
-  console.dir('post:'+ post);
   try {
     await connect();
     await post.save();
