@@ -7,21 +7,10 @@ import Input from "@/components/ui/Input/Input";
 import TextArea from "@/components/ui/Textarea/TextArea";
 import Button from "@/components/ui/Button/Button";
 
-export const metadata = {
-  title: 'Контактная информация',
-  description: 'Просто свяжитесь со мной =)',
-}
-
 const Contact = (props) => {
-  const onChangeInput = () => {
-
-  };
-  const onChangeTextArea = () => {
-
-  }
-
-  const onSubmit = (evt) => {
+  const onSubmit = async (evt) => {
     evt.preventDefault();
+    console.log("Нужно реализовать");
   }
   return (
     <section className={styles.wrapper}>
@@ -31,9 +20,9 @@ const Contact = (props) => {
           <Image src={contact.image} alt="Изображение на странице с контактами" fill className={styles.image}/>
         </div>
         <form className={styles.form} onSubmit={onSubmit}>
-          <Input type="text" onChange={onChangeInput} placeholder="имя" />
-          <Input type="text" onChange={onChangeInput} placeholder="email" />
-          <TextArea onChange={onChangeTextArea} placeholder="сообщение" />
+          <Input type="text" placeholder="имя" />
+          <Input type="text" placeholder="email" />
+          <TextArea placeholder="сообщение" />
           <Button title="Отправить" />
         </form>
       </div>

@@ -17,7 +17,6 @@ const Dashboard = (props) => {
   });
 
   const session = useSession();
-  console.log(session);
   const router = useRouter();
   const userEmail = session?.data?.user.email;
   const fetcher = (...args) => fetch(...args).then(res => res.json());
@@ -57,7 +56,7 @@ const Dashboard = (props) => {
         <Input placeholder="Заголовок" type="text" />
         <Input placeholder="Короткое описание" type="text" />
         <Input placeholder="Сссылка на изображение" type="text" />
-        <TextArea placeholder="Содержимое статьи" rows={10} cols={30} />
+        <TextArea placeholder="Содержимое статьи" rows="5" cols="30" />
         <Button title="Отправить" />
       </form>
     </section>
